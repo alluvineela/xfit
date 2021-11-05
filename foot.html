@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background {
+  background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+
+        @keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <footer>
+        <div id="line"><hr></div>
+        <div id="text"><p>Xfit</p></div>
+        <div id="space"></div>
+        <div id="contact"><a href="">contact us</a></div>
+        <table>
+            <tr>
+                <td><div id="text"><p>Xfit</p></div></td>
+                <td><div id="space"></div></td>
+                <td>        <div id="contact"><a href="">contact us</a></div>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
