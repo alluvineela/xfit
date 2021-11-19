@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
         }
         .navbar
         {
-          overflow: hidden;
+            overflow: hidden;
           background-color: black;
         }
   
@@ -24,12 +25,19 @@
   
         .navbar a
         {
-        padding: 20px 20px;
-        text-decoration:none;
+        padding: 73px 20px;
+        text-decoration: none;
         color:white;
+        position: relative;
+        bottom: 36px;
         font-size:30px;
         }
         
+        .navbar img
+        {
+            position: relative;
+            top: 36px;
+        }
         .sign-up
         {
             padding: 10px 10px;
@@ -38,6 +46,38 @@
             font-size:30px;
             background-color: rgb(33, 240, 33);
             border-radius: 5px;
+        }
+
+        h1
+        {
+            text-align: center;
+        }
+        .background 
+        {
+            background-image: url("yogaimg.png");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        .blur
+        {
+            background: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(8px);
+            height: 100vh;
+            width: 100%;
+        }
+        .text
+        {
+            position: absolute;
+            border: 3px solid #00000059;
+            padding: 10px;
+            top: 17%;
+            left: 15%;
+            right: 15%;
+            background-color: #f1f1f159;
+            
         }
     </style>
 </head>
@@ -49,11 +89,15 @@
         <a href="FAQ">FAQ</a>
         <a href="Gallery">Gallery</a>
         <a href="Store">Store</a>
-        <!-- home, contact us, courses, sign up, faq, gallery, store-->
     </div>
-    <h1>Yoga</h1>
-    <img src="zumba.jpg">
-    <p>Yoga is a group of physical, mental, and spiritual practices or disciplines that originated in ancient India, aimed at controlling ('yoking') and stilling the mind, and recognizing the detached 'witness-consciousness' as untouched by the activities of the mind (Citta) and mundane suffering (Duḥkha). </p>
-    <a href="1.html" class="sign-up">Sign Up Now</a>
+    <div class="background">
+        <div class="blur"></div>
+    </div>
+    <div class="text">
+        <h1>Yoga</h1>
+        <p>Yoga is a group of physical, mental, and spiritual practices or disciplines that originated in ancient India, aimed at controlling ('yoking') and stilling the mind, and recognizing the detached 'witness-consciousness' as untouched by the activities of the mind (Citta) and mundane suffering (Duḥkha). </p>
+        <a href="1.html" class="sign-up">Sign Up Now</a>
+    </div>
+    
 </body>
 </html>
