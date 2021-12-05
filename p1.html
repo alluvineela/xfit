@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>Home</title>
     <style>
-      body
-      {
-        font-family: Arial;
-      }
-      .navbar
+        body
+        {
+            background-color: rgb(41, 40, 40);
+        }
+        table{
+            padding: 30px;
+        }
+        tr
+        {
+            padding-bottom: 30px;
+        }
+        td{
+            font-size: x-large;
+            text-decoration: none;
+            text-align: center;
+        }
+        td a{
+            padding: 20px 20px;
+        }
+        td a:hover
+        {
+            color: whitesmoke;
+
+        }
+        .navbar
       {
         overflow: hidden;
         background-color: black;
@@ -31,100 +50,181 @@
       padding: 20px 20px;
       text-decoration:none;
       color:white;
-      font-size:30px;
+      font-size:10px;
       }
-  </style>
+    </style>
 </head>
 <body>
-   <!-- <a href="3.html"><img src="icon.jpg"></a> -->
-   <div class="navbar">
-    <a href="3.html"><img src="xfit-resize.png"></a>
-    <a href="Courses">Courses</a>
-    <a href="Sign Up">Sign Up</a>
-    <a href="FAQ">FAQ</a>
-    <a href="Gallery">Gallery</a>
-    <a href="Store">Store</a>
-    <!-- home, contact us, courses, sign up, faq, gallery, store-->
-</div>
-    <body style= "background-color:#161b1e;">
-        <div class="container">
-  <h2>X-FIT</h2> 
-  <style>h2{
-      color:rgb(162, 144, 61);
-      font-style:italic;
-      font-family:algerian;
-      </style> 
 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="1.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="2.jpg" alt="Chicago" style="width:100%;">
-      </div>
+    <div class="navbar">
+        <a href="p1.html"><img src="xfit-resize.png"></a>
+        <a href="courses.html" style="font-size: x-large;">Courses</a>
+        <a href="1.html" style="font-size: x-large;">Sign Up</a>
+        <a href="gallery.html" style="font-size: x-large;">Gallery</a>
+        <!-- home, contact us, courses, sign up, faq, gallery, store-->
+    </div>
+        
+            <div class="container" style= "background-color:#161b1e;">
+      <h2>X-FIT</h2> 
+      <style>h2{
+          color:rgb(162, 144, 61);
+          font-style:italic;
+          font-family:algerian;
+      }
+          </style> 
     
-      <div class="item">
-        <img src="3.jpg" alt="New york" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="4.jpg" alt="New1 york" style="width:100%;">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="1.jpg" alt="Los Angeles" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="2.jpg" alt="Chicago" style="width:100%;">
+          </div>
+        
+          <div class="item">
+            <img src="3.jpg" alt="New york" style="width:100%;">
+          </div>
+    
+          <div class="item">
+            <img src="4.jpg" alt="New1 york" style="width:100%;">
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+    <div id="video1">
+        <table style="background-color: whitesmoke;">
+            <tr >
+                <td style="padding:30px;">
+        <video width="256" height="144" controls autoplay muted id="vid">
+            <source src="v.mp4" type="video/mp4">
+            
+          </video>
+          
+        </td>
+        <td style="color: rgb(55, 77, 97); text-align: center; font-size: x-large;">
+            <h1>Why join Gym?</h1>
+            Joining a gym may be the mental motivational in the beginning of a fitness program. A gym can offer you a wide diversity of 
+            activities to improve flexibility, mobility, body posture, strength, and power. Gyms can provide an atmosphere conducive to 
+            a tough workout.</td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Health Benefits</h1>
+                Gym workouts are one of the best ways to turn healthy and fit, and increase your energy levels. A good workout fights obesity 
+                and heart problems by improving blood circulation to your heart. It also does the same for your brain, 
+                making you mentally fit and 
+                reducing the degeneration of your central nervous system, which controls coordination. It also lowers 
+                the chances of a stroke.</td>
+                <td><video width="320" height="240" controls autoplay muted>
+                    <source src="v2.mp4" type="video/mp4">
+                    </video></td>
+        </tr>
+        </table>
+    </div>
+
+<p style="color: cornflowerblue; text-align: center; font-size: 5cm;">Courses</p>
+
+
+    <div id="courses" style="background-color: rgb(41, 40, 40); padding-left: 150px; padding-top: 20px;">
+        <table>
+            <tr>
+                <td>        <a href="strength.html"><img src="OIP (1).jpg"></a>
+                </td>
+                <td>        <a href="zumba.html"><img src="zumba.jpg"></a>
+                </td>
+                <td>        <a href="1.html"><img src="yoga.jpg"></a>
+                </td>
+
+            </tr>
+            <tr>
+                <td><a href="strength.html">Strength</a></td>
+                <td><a href="zumba.html">Zumba</a></td>
+                <td><a href="1.html">Yoga</a></td>
+            </tr>
+            <tr>
+                <td>            <a href="Aerobics.html"><img src="aerobics.jpg"></a>
+                </td>
+                <td>            <a href="swimming.html"><img src="swim.jpg"></a>
+                </td>
+                <td>    <a href="Kickboxing.html"><img src="kickboxing.jpg" style="width: 350px;"></a>    
+                </td>
+            </tr>
+            <tr>
+                <td><a href="Aerobics.html">Aerobics</a></td>
+                <td><a href="swimming.html">Swimming</a></td>
+                <td><a href="Kickboxing.html">Kickboxing</a></td>
+            </tr>
+        </table>
+    </div>
 
 
 
-<div style = "width: 150px; height: 150px; line-height: 3em; overflow:auto; border: thin #000 solid; padding: 5px;">
-        
-        king queen 
-        horse
-        bull
-        grreenne
-        auwiwgiygg
-        fbaygfygfbkbk
-        
-</div>
-    <h1>kickboxing</h1>   
-    <a href="3.html"><img src="oip.jpg"></a>
+
+    <div id="background"></div>
+    <div id="geo"> </div>
     
-    <style>h1{
-      color:rgb(227, 238, 238)</style>
-    <a href="strength.html"><img src="OIP (1).jpg"></a>
-    <a href="zumba.html"><img src="zumba.jpg"></a>
-    <a href="yoga.html"><img src="yoga.jpg"></a>
-    <a href="aerobics.html"><img src="aerobics.jpg"></a>
-    <a href="swim.html"><img src="swim.jpg"></a>
-    
+    <footer style="background-color: rgb(218, 218, 218);">
+        <div id="line"><hr></div>
+        
+        <table>
+            <tr style="background-color: rgb(185, 192, 255);">
 
-    <video width="320" height="240" controls>
-  <source src="v.mp4" type="video/mp4">
-  
-</video>
-<video width="320" height="240" controls>
-<source src="v2.mp4" type="video/mp4">
-</video>
+                <th><div id="text" style="text-align: center; font-size: x-large;"><p>X-fit</p></div></th>
+                <th><div id="space" style="text-align: center;font-size: x-large;">Location</div></th>
+                <th><div id="contact" style="text-align: center;font-size: x-large;"><p>Contact Us</p></div></th>
+
+            </tr>
+            <tr>
+              <th>
+                <div style = "width: 950px; height: 120px; line-height: 2em; border: thin #000 solid; padding: 5px;">
+        
+                We believe that healthy lifestyle lead to better quality of life. The main idea is to have our members enjoy their fitness trainings in classy and private settings. 
+                As such, it is not surprising that THE GYM is passionately led by a team of highly qualified and experienced fitness instructors and health professionals.
+                          Our team's passion is to serve our members with sheer dedication, warm friendliness and joyful helpfulness.
+                </div>
+              </th>
+                <td>
+                  <div>
+                    <iframe width="300" height="200" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=12.846134365495274~77.66692399978638&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                    </iframe>
+                    <div style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                      <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                      <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;rtp=~pos.12.846134365495274_77.66692399978638____&amp;FORM=MBEDLD">Get Directions</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>Phone: 9989989890</p>
+                  <p>Email: xfit@gmail.com</p>
+                  
+                </td>
+        </table>
+    </footer>
+
+
+    
+    
 </body>
 </html>
