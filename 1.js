@@ -17,7 +17,15 @@ var nameSchema = new mongoose.Schema({
    usr_tell: String,
    uemail: String,
    ubirth: String,
-   Weight:String
+   Weight:String,
+   uheight:String,
+   course:String,
+   course1:String,
+   course2:String,
+   course3:String,
+   course4:String,
+   course5:String,
+   intensity:String
 
    });
 var User = mongoose.model("User", nameSchema);
