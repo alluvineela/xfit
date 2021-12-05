@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
         }
         .navbar
         {
-          overflow: hidden;
+            overflow: hidden;
           background-color: black;
         }
   
@@ -24,12 +26,19 @@
   
         .navbar a
         {
-        padding: 20px 20px;
-        text-decoration:none;
+        padding: 73px 20px;
+        text-decoration: none;
         color:white;
+        position: relative;
+        bottom: 36px;
         font-size:30px;
         }
         
+        .navbar img
+        {
+            position: relative;
+            top: 36px;
+        }
         .sign-up
         {
             padding: 10px 10px;
@@ -39,30 +48,100 @@
             background-color: rgb(33, 240, 33);
             border-radius: 5px;
         }
+
+        h1
+        {
+            text-align: center;
+        }
+        .background 
+        {
+            background-image: url("kickboxing.jpg");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        .blur
+        {
+            background: rgba(255, 255, 255, 0.2); 
+            backdrop-filter: blur(8px);
+            height: 100vh;
+            width: 100%;
+        }
+        .text
+        {
+            position: absolute;
+            border: 3px solid #00000059;
+            padding: 10px;
+            top: 17%;
+            left: 15%;
+            right: 15%;
+            background-color: #f1f1f159;
+            font-size: x-large;
+            
+        }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <a href="3.html"><img src="xfit-resize.png"></a>
+        <a href="p1.html"><img src="xfit-resize.png"></a>
         <a href="Courses">Courses</a>
         <a href="Sign Up">Sign Up</a>
-        <a href="FAQ">FAQ</a>
         <a href="Gallery">Gallery</a>
-        <a href="Store">Store</a>
-        <!-- home, contact us, courses, sign up, faq, gallery, store-->
     </div>
-    <h1>Kick-Boxing</h1>
-    <img src="kickboxing.jpg">
-    <div style = "width: 450px; height: 350px; line-height: 3em; overflow:auto; border: thin #000 solid; padding: 5px; ">
+    <div class="background">
+        <div class="blur"></div>
+    </div>
+    <div class="text">
+        <h1>Kick-Boxing</h1>
+        <p> Kickboxing is a group of stand-up combat sports based on kicking and punching, historically 
+            developed from karate mixed with boxing. Kickboxing is 
+            practiced for self-defence, general fitness, or as a contact sport.</p>
+        <a href="1.html" class="sign-up">Sign Up Now</a>
+    </div>
+
+    <div id="background"></div>
+    <div id="geo"> </div>
+    
+    <footer style="background-color: rgb(218, 218, 218);">
+        <div id="line"><hr></div>
         
-        Kickboxing is a group of stand-up combat sports based on kicking and punching, historically 
-        developed from karate mixed with boxing. Kickboxing is 
-        practiced for self-defence, general fitness, or as a contact sport.
+        <table>
+            <tr style="background-color: rgb(185, 192, 255);">
+
+                <th><div id="text" style="text-align: center; font-size: x-large;"><p>X-fit</p></div></th>
+                <th><div id="space" style="text-align: center;font-size: x-large;">Location</div></th>
+                <th><div id="contact" style="text-align: center;font-size: x-large;"><p>Contact Us</p></div></th>
+
+            </tr>
+            <tr>
+              <th>
+                <div style = "width: 950px; height: 120px; line-height: 2em; border: thin #000 solid; padding: 5px;">
         
-</div>
-    <p style="text-align: center;">Kickboxing is a group of stand-up combat sports based on kicking and punching, historically </p>
-    <p style="text-align: center;">developed from karate mixed with boxing. Kickboxing is </p>
-    <p style="text-align: center;">practiced for self-defence, general fitness, or as a contact sport.</p>
-    <a href="1.html" class="sign-up">Sign Up Now</a>
+                We believe that healthy lifestyle lead to better quality of life. The main idea is to have our members enjoy their fitness trainings in classy and private settings. 
+                As such, it is not surprising that THE GYM is passionately led by a team of highly qualified and experienced fitness instructors and health professionals.
+                          Our team's passion is to serve our members with sheer dedication, warm friendliness and joyful helpfulness.
+                </div>
+              </th>
+                <td>
+                  <div>
+                    <iframe width="300" height="200" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=12.846134365495274~77.66692399978638&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                    </iframe>
+                    <div style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                      <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                      <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;rtp=~pos.12.846134365495274_77.66692399978638____&amp;FORM=MBEDLD">Get Directions</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p>Phone: 9989989890</p>
+                  <p>Email: xfit@gmail.com</p>
+                  <a href="">Know More</a>
+                </td>
+        </table>
+    </footer>
+
+    
 </body>
 </html>
