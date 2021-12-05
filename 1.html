@@ -1,48 +1,166 @@
 <!DOCTYPE html>
 <html>
-<head>
-<form method="post" action="/addname" target="_blank">
-Name<input type="text" name="unmae"></input></br></br>
-Phone<input type="tel"name="usr_tell"placeholder="xxx-xxx-xxxx"/></br></br>
-Email<input type="email" name="uemail"></input></br></br>
-Date of birth<input type="date" name="ubirth"></input></br></br>
-Weight</br>
-<input type="radio" name="Weight"value="30-50kgs">30-50kgs</br>
-<input type="radio" name="Weight"value="50-70kgs">50-70kgs</br>
-<input type="radio" name="Weight"value="70-120kgs">70-120kgs</br>
-<input type="radio" name="Weight"value="120 & more kgs">120&above</br>
-</br>
-Height<input type="text" name="uheight"></input></br>
-</br>
-Gender</br>
-
-Male<input type="radio" name="gender">
-Female<input type="radio" name="gender"></br>
-</br>
-Courses you are interested</br> 
-<input type="checkbox" name="course"value="Zumba">Zumba
-<input type="checkbox" name="course1"value="Aerobics">Aerobics
-<input type="checkbox" name="course2"value="Yoga">Yoga
-<input type="checkbox" name="course3"value="Kick-boxing">Kick-boxing
-
-<input type="checkbox" name="course4"value="Strength">Strength
-<input type="checkbox" name="course5"value="Swimming">Swimming
-</br>
-</br>
-
-Course Intensity</br>
-<select name="intensity" size="2">
-<option value="1hr">1hr per day</option>
-<option value="2hr">2hr per day</option>
-<option value="thrice  aweek ">thrice a week</option>
-<option value="everyday">everyday</option></br>
-</br>
-</br>
-</br>
-
-
-<input type="submit" name="submit"/>
-</form>
-</head>
-</html>
+    <head>
+        <title>Sign Up Page</title>
+        <link rel="icon" href="xfit-resize.png"/>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerobics</title>
+        <style>
+            body
+            {
+                font-family: Arial;
+            }
+            .navbar
+            {
+                overflow: hidden;
+                background-color: black;
+            }
+    
+            .navbar a:hover
+            {
+                background-color: limegreen;
+                color:yellow;
+            }
+    
+            .navbar a
+            {
+                padding: 73px 20px;
+                text-decoration: none;
+                color:white;
+                position: relative;
+                bottom: 36px;
+                font-size:30px;
+            }
+            .background 
+            {
+                background-image: url("ba.jpg");
+                background-position: bottom;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 100vh;
+                width: 100%;
+            }
+            .blur
+            {
+                background: rgba(255, 255, 255, 0.2); 
+                backdrop-filter: blur(8px);
+                height: 100vh;
+                width: 100%;
+            }
+            .navbar img
+            {
+                position: relative;
+                top: 36px;
+            }
+            .text
+            {
+                position: absolute;
+                border: 3px solid #00000059;
+                padding: 10px;
+                top: 17%;
+                left: 15%;
+                right: 15%;
+                background-color: #a7a7a7b0;
+            }
+            footer
+            {
+                position: absolute;
+                right: 0%;
+                left: 0%;
+                top: 770px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="p1.html"><img src="xfit-resize.png"></a>
+            <a href="courses.html">Courses</a>
+            <a href="1.html">Sign Up</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+        <div class="background">
+            <div class="blur"></div>
+        </div>
+        <form method="post" action="/addname" target="_blank" class="text">
+            <h1>Sign Up Form</h1>
+            Name<input type="text" name="unmae"></input></br></br>
+            Phone<input type="tel"name="usr_tell"placeholder="xxx-xxx-xxxx"/></br></br>
+            Email<input type="email" name="uemail"></input></br></br>
+            Date of birth<input type="date" name="ubirth"></input></br></br>
+            Weight</br>
+            <input type="radio" name="Weight"value="30-50kgs">30-50kgs</br>
+            <input type="radio" name="Weight"value="50-70kgs">50-70kgs</br>
+            <input type="radio" name="Weight"value="70-120kgs">70-120kgs</br>
+            <input type="radio" name="Weight"value="120 & more kgs">120&above</br>
+            </br>
+            Height<input type="text" name="uheight"></input></br>
+            </br>
+            Gender</br>
+            
+            Male<input type="radio" name="gender">
+            Female<input type="radio" name="gender"></br>
+            </br>
+            Courses you are interested</br> 
+            <input type="checkbox" name="course"value="Zumba">Zumba
+            <input type="checkbox" name="course1"value="Aerobics">Aerobics
+            <input type="checkbox" name="course2"value="Yoga">Yoga
+            <input type="checkbox" name="course3"value="Kick-boxing">Kick-boxing
+            
+            <input type="checkbox" name="course4"value="Strength">Strength
+            <input type="checkbox" name="course5"value="Swimming">Swimming
+            </br>
+            </br>
+            <a href="price.html">Check The Costs Here!</a>
+            </br>
+            </br>
+            Course intensity
+            <select name="intensity" size="2">
+            <option value="1hr">1hr per day</option>
+            <option value="2hr">2hr per day</option>
+            <option value="thrice a week ">thrice a week</option>
+            <option value="everyday">everyday</option>
+            </select>
+            </br>
+            <input type="submit" name="submit"/>
+        </form>
+        <footer style="background-color: rgb(218, 218, 218);">
+            <div id="line"><hr></div>
+            
+            <table>
+                <tr style="background-color: rgb(185, 192, 255);">
+    
+                    <th><div id="text" style="text-align: center; font-size: x-large;"><p>X-fit</p></div></th>
+                    <th><div id="space" style="text-align: center;font-size: x-large;">Location</div></th>
+                    <th><div id="contact" style="text-align: center;font-size: x-large;"><p>Contact Us</p></div></th>
+    
+                </tr>
+                <tr>
+                  <th>
+                    <div style = "width: 950px; height: 120px; line-height: 2em; border: thin #000 solid; padding: 5px;">
+            
+                    We believe that healthy lifestyle lead to better quality of life. The main idea is to have our members enjoy their fitness trainings in classy and private settings. 
+                    As such, it is not surprising that THE GYM is passionately led by a team of highly qualified and experienced fitness instructors and health professionals.
+                              Our team's passion is to serve our members with sheer dedication, warm friendliness and joyful helpfulness.
+                    </div>
+                  </th>
+                    <td>
+                      <div>
+                        <iframe width="300" height="200" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=12.846134365495274~77.66692399978638&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                        </iframe>
+                        <div style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                          <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                          <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=12.846134365495274~77.66692399978638&amp;sty=r&amp;lvl=16&amp;rtp=~pos.12.846134365495274_77.66692399978638____&amp;FORM=MBEDLD">Get Directions</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p>Phone: 9989989890</p>
+                      <p>Email: xfit@gmail.com</p>
+                      <a href="">Know More</a>
+                    </td>
+            </table>
+        </footer>
+    </body>
 </html>
